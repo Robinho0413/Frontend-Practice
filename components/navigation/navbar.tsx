@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 w-full shadow-md z-50">
+        <nav className="fixed top-0 left-0 w-full z-50">
             <div className="container mx-auto px-16 py-6 flex justify-between items-center">
                 <div className="flex items-center">
                     <Image src="/images/monstercat-logo.webp" alt="Logo" width={50} height={50} />

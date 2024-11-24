@@ -4,7 +4,8 @@
 
 :root {
   --background: #000000;
-  --foreground: #fdfdfd;
+  --foreground: #F1F1F1;
+  --primary: #50A584;
 
   --font-monext-black: 'PPMonumentExtended-Black', sans-serif;
   --font-monext-black-italic: 'PPMonumentExtended-BlackItalic', sans-serif;
@@ -17,4 +18,24 @@
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+.mask-gradient {
+  /* Appliquer un masque progressif */
+  -webkit-mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+  mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+
+  /* S'assurer que le masque couvre toute la section */
+  -webkit-mask-size: cover;
+  mask-size: cover;
+
+  /* Compatibilité avec les anciens navigateurs */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.font-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F1F1F1;
+  -webkit-text-fill-color: transparent;
 }

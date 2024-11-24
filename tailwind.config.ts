@@ -13,6 +13,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
       },
       fontFamily: {
         monextBlack: ["var(--font-monext-black)"],
@@ -24,6 +25,7 @@ export default {
       },
       backgroundImage: {
         'hero': "url('/images/background.webp')",
+        'tile': "url('/images/background-tile.webp')",
       },
       backgroundSize: {
         'hero': 'cover',
