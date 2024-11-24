@@ -4,42 +4,42 @@ import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 
 const monumentExtendedBlack = localFont({
-  src: "./fonts/PPMonumentExtended-Black.otf",
+  src: "/fonts/PPMonumentExtended-Black.otf",
   variable: "--font-monext-black",
   weight: "900",
   style: "normal",
 });
 
 const monumentExtendedBlackItalic = localFont({
-  src: "./fonts/PPMonumentExtended-BlackItalic.otf",
+  src: "/fonts/PPMonumentExtended-BlackItalic.otf",
   variable: "--font-monext-black-italic",
   weight: "900",
   style: "italic",
 });
 
 const monumentExtendedLight = localFont({
-  src: "./fonts/PPMonumentExtended-Light.otf",
+  src: "/fonts/PPMonumentExtended-Light.otf",
   variable: "--font-monext-light",
   weight: "300",
   style: "normal",
 });
 
 const monumentExtendedLightItalic = localFont({
-  src: "./fonts/PPMonumentExtended-LightItalic.otf",
+  src: "/fonts/PPMonumentExtended-LightItalic.otf",
   variable: "--font-monext-light-italic",
   weight: "300",
   style: "italic",
 });
 
 const monumentExtendedRegular = localFont({
-  src: "./fonts/PPMonumentExtended-Regular.otf",
+  src: "/fonts/PPMonumentExtended-Regular.otf",
   variable: "--font-monext-regular",
   weight: "400",
   style: "normal",
 });
 
 const monumentExtendedRegularItalic = localFont({
-  src: "./fonts/PPMonumentExtended-RegularItalic.otf",
+  src: "/fonts/PPMonumentExtended-RegularItalic.otf",
   variable: "--font-monext-regular-italic",
   weight: "400",
   style: "italic",
