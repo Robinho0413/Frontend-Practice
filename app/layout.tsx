@@ -3,15 +3,46 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const monumentExtendedBlack = localFont({
+  src: "./fonts/PPMonumentExtended-Black.otf",
+  variable: "--font-monext-black",
+  weight: "900",
+  style: "normal",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const monumentExtendedBlackItalic = localFont({
+  src: "./fonts/PPMonumentExtended-BlackItalic.otf",
+  variable: "--font-monext-black-italic",
+  weight: "900",
+  style: "italic",
+});
+
+const monumentExtendedLight = localFont({
+  src: "./fonts/PPMonumentExtended-Light.otf",
+  variable: "--font-monext-light",
+  weight: "300",
+  style: "normal",
+});
+
+const monumentExtendedLightItalic = localFont({
+  src: "./fonts/PPMonumentExtended-LightItalic.otf",
+  variable: "--font-monext-light-italic",
+  weight: "300",
+  style: "italic",
+});
+
+const monumentExtendedRegular = localFont({
+  src: "./fonts/PPMonumentExtended-Regular.otf",
+  variable: "--font-monext-regular",
+  weight: "400",
+  style: "normal",
+});
+
+const monumentExtendedRegularItalic = localFont({
+  src: "./fonts/PPMonumentExtended-RegularItalic.otf",
+  variable: "--font-monext-regular-italic",
+  weight: "400",
+  style: "italic",
 });
 
 export const metadata: Metadata = {
@@ -21,13 +52,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${monumentExtendedBlack.variable} 
+          ${monumentExtendedBlackItalic.variable} 
+          ${monumentExtendedLight.variable} 
+          ${monumentExtendedLightItalic.variable} 
+          ${monumentExtendedRegular.variable} 
+          ${monumentExtendedRegularItalic.variable} 
+          antialiased
+        `}
       >
         <Navbar />
         {children}

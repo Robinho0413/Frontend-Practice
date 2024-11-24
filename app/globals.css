@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #000000;
+  --foreground: #fdfdfd;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-monext-black: 'PPMonumentExtended-Black', sans-serif;
+  --font-monext-black-italic: 'PPMonumentExtended-BlackItalic', sans-serif;
+  --font-monext-light: 'PPMonumentExtended-Light', sans-serif;
+  --font-monext-light-italic: 'PPMonumentExtended-LightItalic', sans-serif;
+  --font-monext-regular: 'PPMonumentExtended-Regular', sans-serif;
+  --font-monext-regular-italic: 'PPMonumentExtended-RegularItalic', sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
