@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'PPMonumentExtended-Black';
+  src: url('/path/to/fonts/PPMonumentExtended-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMonumentExtended-BlackItalic';
+  src: url('/path/to/fonts/PPMonumentExtended-BlackItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPMonumentExtended-Light';
+  src: url('/path/to/fonts/PPMonumentExtended-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMonumentExtended-LightItalic';
+  src: url('/path/to/fonts/PPMonumentExtended-LightItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPMonumentExtended-Regular';
+  src: url('/path/to/fonts/PPMonumentExtended-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPMonumentExtended-RegularItalic';
+  src: url('/path/to/fonts/PPMonumentExtended-RegularItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 :root {
   --background: #000000;
   --foreground: #F1F1F1;
@@ -34,3 +76,8 @@ body {
   mask-repeat: no-repeat;
 }
 
+.font-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F1F1F1;
+  -webkit-text-fill-color: transparent;
+}
