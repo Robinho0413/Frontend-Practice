@@ -8,7 +8,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ variant = 'primary', children, onClick }) => {
-  const baseStyles = 'flex flex-row items-center justify-center uppercase px-4 py-2 focus:outline-none font-monextRegular text-sm font-bold tracking-wider duration-100';
+  const baseStyles = 'flex flex-row items-center justify-center uppercase px-7 py-4 focus:outline-none font-monextRegular text-sm font-bold tracking-wider duration-100';
   const variantStyles = {
     primary: 'bg-primary text-foreground hover:bg-foreground hover:text-background border border-primary',
     secondary: 'bg-transparent text-foreground hover:bg-foreground hover:text-background border border-foreground',

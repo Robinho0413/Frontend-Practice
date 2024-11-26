@@ -15,11 +15,11 @@ export default function Home() {
             <h2 className="text-2xl">Conro</h2>
             <div className="flex flex-row gap-2 mt-4">
               <Button>
-                <Image src="/icons/play.svg" alt="Play" width={32} height={32} />
+                <Image src="/icons/play.svg" alt="Play" width={20} height={20} className="mr-2" />
                 Listen now
               </Button>
               <Button variant="secondary">
-                <Image src="/icons/play.svg" alt="Play" width={32} height={32} />
+                <Image src="/icons/share.svg" alt="Play" width={20} height={20} className="mr-2" />
                 Share
               </Button>
             </div>
