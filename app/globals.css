@@ -34,8 +34,3 @@ body {
   mask-repeat: no-repeat;
 }
 
-.font-stroke {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #F1F1F1;
-  -webkit-text-fill-color: transparent;
-}
