@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/ui/button";
+import PlayIcon from "@/components/icons/playIcon";
+import ShareIcon from "@/components/icons/shareIcon";
 
 export default function Home() {
   return (
@@ -17,11 +19,11 @@ export default function Home() {
           <h2 className="text-3xl font-monextRegular font-bold mb-16">Conro</h2>
           <div className="flex flex-row gap-2 mt-4">
             <Button>
-              <Image src="/icons/play.svg" alt="Play" width={20} height={20} className="mr-2" />
+              <PlayIcon />
               Listen now
             </Button>
             <Button variant="secondary">
-              <Image src="/icons/share.svg" alt="Play" width={20} height={20} className="mr-2" />
+              <ShareIcon />
               Share
             </Button>
           </div>

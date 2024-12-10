@@ -66,6 +66,7 @@ export default function RootLayout({
           ${monumentExtendedRegular.variable} 
           ${monumentExtendedRegularItalic.variable} 
           antialiased
+          custom-scrollbar
         `}
       >
         <Navbar />
