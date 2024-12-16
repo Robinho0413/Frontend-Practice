@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "@/components/ui/button";
 import PlayIcon from "@/components/icons/playIcon";
 import ShareIcon from "@/components/icons/shareIcon";
+import Footer from "@/components/sections/footer";
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
           </div>
         </div>
         <div className="uppercase">
-          <h1 className="text-5xl font-monextBlack tracking-widest font-stroke mb-3">Level days</h1>
-          <h2 className="text-3xl font-monextRegular font-bold mb-16">Conro</h2>
+          <h1 className="text-3xl xl:text-5xl font-monextBlack tracking-widest font-stroke mb-3">Level days</h1>
+          <h2 className="text-2xl xl:text-3xl font-monextRegular font-bold mb-16">Conro</h2>
           <div className="flex flex-row gap-2 mt-4">
             <Button>
               <PlayIcon />
@@ -35,6 +36,7 @@ export default function Home() {
           <h2 className="uppercase text-white text-3xl">Stream it your way</h2>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

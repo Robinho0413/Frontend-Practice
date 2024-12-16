@@ -29,37 +29,84 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 font-monextRegular font-bold text-md">
-            <div className="container mx-auto px-16 py-6 flex justify-between items-center">
+            <div className="px-4 xl:px-16 py-2 xl:py-6 flex justify-between items-center w-full bg-black/80 xl:bg-transparent">
                 <div className="flex items-center">
-                    <Image src="/images/monstercat-logo.webp" alt="Logo" width={50} height={50} />
+                    <Image src="/images/monstercat-logo.webp" alt="monstercat-logo" width={48} height={48} className='w-9 sm:w-12' />
                 </div>
+                <ul className='inset hidden xl:absolute top-24 right-0 xl:w-12 sm:flex xl:flex-col space-x-6 xl:space-x-0 xl:space-y-6 justify-center xl:justify-normal text-center items-center mr-0 xl:mr-14 h-full'>
+                    <li>
+                        <a href="#">
+                            <InstagramIcon />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <TiktokIcon />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <TwitterIcon />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <TwitchIcon />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <FacebookIcon />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <DiscordIcon />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <MonstercatPlayerIcon className='w-6' />
+                        </a>
+                    </li>
+                </ul>
                 <div>
-                    <button onClick={toggleMenu} className="focus:outline-none">
+                    <button onClick={toggleMenu} className="focus:outline-none flex items-center justify-center">
                         <Image src="/icons/menu.svg" alt="Menu" width={32} height={32} className='text-white' />
                     </button>
                 </div>
-                <div className={`fixed flex flex-col bottom-0 top-0 right-0 w-[26rem] bg-black shadow-lg transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
+                <div className={`fixed flex flex-col bottom-0 top-0 right-0 w-full sm:w-[26rem] bg-black shadow-lg transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
                     <div className='flex flex-row justify-between p-8'>
-                        <Image src="/images/monstercat-logo-white.svg" alt="Menu" width={180} height={180} />
+                        <Image src="/images/monstercat-logo-white.svg" alt="monstercat-logo" width={180} height={180} />
                         <button onClick={toggleMenu} className="top-4 right-4 focus:outline-none">
-                            <Image src="/icons/close.svg" alt="Menu" width={32} height={32} />
+                            <Image src="/icons/close.svg" alt="Close" width={32} height={32} />
                         </button>
                     </div>
                     <ul className="space-y-1 uppercase overflow-y-auto h-[calc(100%-200px)] px-8 custom-scrollbar mr-8">
                         <li className="py-2">
-                            <button onClick={() => toggleSubMenu(setIsMusicOpen)} className="w-full text-left focus:outline-none uppercase">
+                            <button onClick={() => toggleSubMenu(setIsMusicOpen)} className="flex gap-3 w-full text-left focus:outline-none uppercase">
                                 Music
+                                <Image
+                                    src="/icons/chevronRight.svg"
+                                    alt="Music"
+                                    width={22}
+                                    height={22}
+                                    className={`transform transition-transform duration-100 ${isMusicOpen ? '-rotate-90' : ''}`}
+                                />
                             </button>
                             {isMusicOpen && (
                                 <ul className="pl-4 mt-2 space-y-2 text-sm">
                                     <li className="py-1 opacity-80 hover:opacity-100 duration-150">
-                                        <a href="#">Sub-item 1</a>
+                                        <a href="#">Our music</a>
                                     </li>
                                     <li className="py-1 opacity-80 hover:opacity-100 duration-150">
-                                        <a href="#">Sub-item 2</a>
+                                        <a href="#">Instinct</a>
                                     </li>
                                     <li className="py-1 opacity-80 hover:opacity-100 duration-150">
-                                        <a href="#">Sub-item 3</a>
+                                        <a href="#">Uncaged</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Silk</a>
                                     </li>
                                 </ul>
                             )}
@@ -68,16 +115,91 @@ const Navbar: React.FC = () => {
                             <a href="#">Artists</a>
                         </li>
                         <li className="py-2">
-                            <a href="#">About</a>
+                            <button onClick={() => toggleSubMenu(setIsAboutOpen)} className="flex gap-3 w-full text-left focus:outline-none uppercase">
+                                About
+                                <Image
+                                    src="/icons/chevronRight.svg"
+                                    alt="About"
+                                    width={22}
+                                    height={22}
+                                    className={`transform transition-transform duration-100 ${isAboutOpen ? '-rotate-90' : ''}`}
+                                />
+                            </button>
+                            {isAboutOpen && (
+                                <ul className="pl-4 mt-2 space-y-2 text-sm">
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">About Monstercat</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Diversity & Inclusion</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Code of Ethics</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Environmental</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Contact Us</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Careers</a>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
                         <li className="py-2">
                             <a href="#">News</a>
                         </li>
                         <li className="py-2">
-                            <a href="#">Events</a>
+                            <button onClick={() => toggleSubMenu(setIsEventsOpen)} className="flex gap-3 w-full text-left focus:outline-none uppercase">
+                                Events
+                                <Image
+                                    src="/icons/chevronRight.svg"
+                                    alt="Events"
+                                    width={22}
+                                    height={22}
+                                    className={`transform transition-transform duration-100 ${isEventsOpen ? '-rotate-90' : ''}`}
+                                />
+                            </button>
+                            {isEventsOpen && (
+                                <ul className="pl-4 mt-2 space-y-2 text-sm">
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Monstercat Events Experience</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Upcoming Events</a>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
                         <li className="py-2">
-                            <a href="#">Programming</a>
+                            <button onClick={() => toggleSubMenu(setIsProgrammingOpen)} className="flex gap-3 w-full text-left focus:outline-none uppercase">
+                                Programming
+                                <Image
+                                    src="/icons/chevronRight.svg"
+                                    alt="Programming"
+                                    width={22}
+                                    height={22}
+                                    className={`transform transition-transform duration-100 ${isProgrammingOpen ? '-rotate-90' : ''}`}
+                                />
+                            </button>
+                            {isProgrammingOpen && (
+                                <ul className="pl-4 mt-2 space-y-2 text-sm">
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150 normal-case">
+                                        <a href="#">MonstercatTV</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Call of the Wild</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Silk Showcase</a>
+                                    </li>
+                                    <li className="py-1 opacity-80 hover:opacity-100 duration-150">
+                                        <a href="#">Upcoming Shows</a>
+                                    </li>
+                                </ul>
+                            )}
                         </li>
                         <li className="py-2">
                             <a href="#">Gold</a>
