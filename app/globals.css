@@ -76,10 +76,12 @@ body {
   mask-repeat: no-repeat;
 }
 
-.font-stroke {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #F1F1F1;
-  -webkit-text-fill-color: transparent;
+@media (min-width: 768px) {
+  .font-stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F1F1F1;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .custom-scrollbar::-webkit-scrollbar {
