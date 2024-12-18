@@ -31,7 +31,9 @@ const Navbar: React.FC = () => {
         <nav className="fixed top-0 left-0 w-full z-50 font-monextRegular font-bold text-md">
             <div className="px-4 xl:px-16 py-2 xl:py-6 flex justify-between items-center w-full bg-black/80 xl:bg-transparent">
                 <div className="flex items-center">
-                    <Image src="/images/monstercat-logo.webp" alt="monstercat-logo" width={48} height={48} className='w-9 sm:w-12' />
+                    <a href="">
+                        <Image src="/images/monstercat-logo.webp" alt="monstercat-logo" width={48} height={48} className='w-9 sm:w-12' />
+                    </a>
                 </div>
                 <ul className='inset hidden xl:absolute top-24 right-0 xl:w-12 sm:flex xl:flex-col space-x-6 xl:space-x-0 xl:space-y-6 justify-center xl:justify-normal text-center items-center mr-0 xl:mr-14 h-full'>
                     <li>

@@ -21,22 +21,22 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between md:items-start border-t border-white pt-12 pb-6">
           <div className="flex flex-col gap-2 w-full">
             <ul className="font-monextRegular font-bold text-sm md:text-lg space-y-1 uppercase">
-              <li>ABOUT MONSTERCAT</li>
-              <li>CONTACT US</li>
-              <li>CAREERS</li>
-              <li>NEWS</li>
-              <li>PRESS</li>
+              <li><a href="#">ABOUT MONSTERCAT</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">CAREERS</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">PRESS</a></li>
             </ul>
           </div>
           <div className="flex flex-col gap-2 w-full">
             <ul className="font-monextRegular font-bold text-sm md:text-lg space-y-1">
-              <li>TERMS OF SERVICE</li>
-              <li>PRIVACY POLICY</li>
+              <li><a href="#">TERMS OF SERVICE</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
             </ul>
           </div>
           <div className="mt-12 md:mt-0 w-full">
             <h3 className="font-monextRegular font-bold text-sm md:text-lg uppercase opacity-50 mb-4">MONSTERCAT NEWS</h3>
-            <p className="font-normal text-md italic">
+            <p className="font-montserrat font-light text-md italic">
               Don't miss a thing, stay up to date with the latest news from us.
             </p>
             <div className="mt-4 flex items-center border-b border-white/20">

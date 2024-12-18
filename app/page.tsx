@@ -2,7 +2,6 @@ import Image from "next/image";
 import Button from "@/components/ui/button";
 import PlayIcon from "@/components/icons/playIcon";
 import ShareIcon from "@/components/icons/shareIcon";
-import Footer from "@/components/sections/footer";
 import StreamItYourWay from "@/components/sections/streamItYourWay";
 import Tracklist from "@/components/sections/tracklist";
 import MusicVideo from "@/components/sections/musicVideo";
