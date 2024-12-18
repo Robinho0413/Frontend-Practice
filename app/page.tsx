@@ -8,17 +8,17 @@ import Tracklist from "@/components/sections/tracklist";
 
 const tracks = [
   { id: 1, title: 'The Small Things', artist: 'Conro', duration: '3:35' },
-  { id: 2, title: 'Track 2', artist: 'Artist 2', duration: '4:20' },
-  { id: 3, title: 'Track 3', artist: 'Artist 3', duration: '2:30' },
-  { id: 4, title: 'Track 4', artist: 'Artist 4', duration: '3:15' },
-  { id: 5, title: 'Track 5', artist: 'Artist 5', duration: '5:00' },
-  { id: 6, title: 'Track 6', artist: 'Artist 6', duration: '3:50' },
-  { id: 7, title: 'Track 7', artist: 'Artist 7', duration: '4:10' },
-  { id: 8, title: 'Track 8', artist: 'Artist 8', duration: '3:25' },
-  { id: 9, title: 'Track 9', artist: 'Artist 9', duration: '4:00' },
-  { id: 10, title: 'Track 10', artist: 'Artist 10', duration: '3:35' },
-  { id: 11, title: 'Track 11', artist: 'Artist 11', duration: '4:45' },
-  { id: 12, title: 'Track 12', artist: 'Artist 12', duration: '3:55' },
+  { id: 2, title: 'Without Your Love', artist: 'Artist 2', duration: '3:09' },
+  { id: 3, title: 'Therapy', artist: 'Conro', duration: '3:06' },
+  { id: 4, title: 'Fighters', artist: 'Conro', duration: '3:46' },
+  { id: 5, title: 'Way Up', artist: 'Conro & Nevve', duration: '3:32' },
+  { id: 6, title: 'Waiting', artist: 'Conro', duration: '3:07' },
+  { id: 7, title: 'Dreaming', artist: 'Conro', duration: '2:57' },
+  { id: 8, title: 'Tattoo', artist: 'Conro', duration: '3:29' },
+  { id: 9, title: 'Out for the Night', artist: 'Conro', duration: '3:05' },
+  { id: 10, title: 'Overdue', artist: 'Conro', duration: '2:48' },
+  { id: 11, title: 'Say It', artist: 'Conro', duration: '3:04' },
+  { id: 12, title: 'Here to Stay', artist: 'Conro', duration: '2:44' },
 ];
 
 export default function Home() {
