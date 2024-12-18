@@ -3,12 +3,23 @@ import Button from "@/components/ui/button";
 import PlayIcon from "@/components/icons/playIcon";
 import ShareIcon from "@/components/icons/shareIcon";
 import Footer from "@/components/sections/footer";
-import MonstercatPlayerLargeIcon from "@/components/icons/monstercatPlayerLargeIcon";
-import YoutubeIcon from "@/components/icons/youtubeIcon";
-import AppleIcon from "@/components/icons/appleIcon";
-import BandcampIcon from "@/components/icons/bandcampIcon";
-import SoundcloudIcon from "@/components/icons/soundcloudIcon";
-import SpotifyIcon from "@/components/icons/spotifyIcon";
+import StreamItYourWay from "@/components/sections/streamItYourWay";
+import Tracklist from "@/components/sections/tracklist";
+
+const tracks = [
+  { id: 1, title: 'The Small Things', artist: 'Conro', duration: '3:35' },
+  { id: 2, title: 'Track 2', artist: 'Artist 2', duration: '4:20' },
+  { id: 3, title: 'Track 3', artist: 'Artist 3', duration: '2:30' },
+  { id: 4, title: 'Track 4', artist: 'Artist 4', duration: '3:15' },
+  { id: 5, title: 'Track 5', artist: 'Artist 5', duration: '5:00' },
+  { id: 6, title: 'Track 6', artist: 'Artist 6', duration: '3:50' },
+  { id: 7, title: 'Track 7', artist: 'Artist 7', duration: '4:10' },
+  { id: 8, title: 'Track 8', artist: 'Artist 8', duration: '3:25' },
+  { id: 9, title: 'Track 9', artist: 'Artist 9', duration: '4:00' },
+  { id: 10, title: 'Track 10', artist: 'Artist 10', duration: '3:35' },
+  { id: 11, title: 'Track 11', artist: 'Artist 11', duration: '4:45' },
+  { id: 12, title: 'Track 12', artist: 'Artist 12', duration: '3:55' },
+];
 
 export default function Home() {
   return (
@@ -38,41 +49,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative w-full flex flex-col items-start mt-20 lg:mt-0">
-          <h2 className="uppercase text-xl sm:text-2xl md:text-4xl xl:text-5xl font-monextRegular font-bold">Stream it your way</h2>
-          <ul className="flex flex-row mt-4 md:mt-8">
-            <li className="flex items-center justify-center border px-2 py-3 md:px-4 md:py-6">
-              <a href="#">
-                <MonstercatPlayerLargeIcon className="w-24" />
-              </a>
-            </li>
-            <li className="flex items-center justify-center border p-3 md:p-6">
-              <a href="#">
-                <BandcampIcon />
-              </a>
-            </li>
-            <li className="flex items-center justify-center border p-3 md:p-6">
-              <a href="#">
-                <SoundcloudIcon />
-              </a>
-            </li>
-            <li className="flex items-center justify-center border p-3 md:p-6">
-              <a href="#">
-                <AppleIcon />
-              </a>
-            </li>
-            <li className="flex items-center justify-center border p-3 md:p-6">
-              <a href="#">
-                <YoutubeIcon />
-              </a>
-            </li>
-            <li className="flex items-center justify-center border p-3 md:p-6">
-              <a href="#">
-                <SpotifyIcon />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <StreamItYourWay />
+
+        <Tracklist tracks={tracks} />
 
       </div>
       <Footer />
