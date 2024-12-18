@@ -2,8 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 
 interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'outline';
-  size?: 'small' | 'medium' | 'large';
+  variant?: 'primary' | 'secondary' | 'outline' | 'transparent';
+  size?: 'icon' | 'small' | 'medium' | 'large';
   children: React.ReactNode;
   onClick?: () => void;
 }
@@ -14,8 +14,10 @@ const Button: React.FC<ButtonProps> = ({ variant = 'primary', size = 'medium', c
     primary: 'bg-primary text-foreground hover:bg-foreground hover:text-background border border-primary hover:border-foreground',
     secondary: 'bg-transparent text-foreground hover:bg-foreground hover:text-background border border-foreground',
     outline: 'bg-transparent border border-primary text-foreground hover:bg-primary hover:text-foreground',
+    transparent: 'bg-transparent text-foreground hover:text-black hover:bg-white border border-transparent hover:border-white',
   };
   const sizeStyles = {
+    icon: 'px-4 py-1',
     small: 'px-4 py-2 text-sm',
     medium: 'px-6 md:px-7 py-3 md:py-4 text-xs md:text-sm',
     large: 'px-10 py-6 text-lg',

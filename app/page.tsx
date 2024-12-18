@@ -5,6 +5,7 @@ import ShareIcon from "@/components/icons/shareIcon";
 import Footer from "@/components/sections/footer";
 import StreamItYourWay from "@/components/sections/streamItYourWay";
 import Tracklist from "@/components/sections/tracklist";
+import MusicVideo from "@/components/sections/musicVideo";
 
 const tracks = [
   { id: 1, title: 'The Small Things', artist: 'Conro', duration: '3:35' },
@@ -25,7 +26,7 @@ export default function Home() {
   return (
     <div className="bg-tile bg-repeat">
       <div className="absolute inset-0 h-screen bg-hero bg-no-repeat bg-cover bg-center mask-gradient brightness-50 blur-sm"></div>
-      <div className="mx-auto flex flex-col items-center px-4 w-full sm:w-[500px] md:w-[712px] lg:w-fit max-w-7xl">
+      <div className="mx-auto flex flex-col items-center px-4 w-full md:w-[712px] lg:w-fit max-w-lg md:max-w-7xl">
         <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-14 xl:gap-20 lg:h-screen mt-28 sm:mt-28 md:mt-48 lg:mt-16 w-full">
           <div className="relative w-full lg:w-96 xl:w-[500px]">
             <Image src="/images/cover.webp" alt="Cover" width={500} height={500} className="w-full mb-10 md:mb-0" />
@@ -53,8 +54,8 @@ export default function Home() {
 
         <Tracklist tracks={tracks} />
 
+        <MusicVideo />
       </div>
-      <Footer />
     </div>
   );
 }

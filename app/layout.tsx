@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
+import Footer from "@/components/sections/footer";
 
 const monumentExtendedBlack = localFont({
   src: "/fonts/PPMonumentExtended-Black.otf",
@@ -71,6 +72,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

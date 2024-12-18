@@ -20,15 +20,17 @@ const Tracklist: React.FC<TracklistProps> = ({ tracks }) => {
             <ul className='w-full mt-4'>
                 {tracks.map(track => (
                     <li key={track.id}>
-                        <div className='flex flex-row items-center gap-8 py-4 pl-1'>
-                            <p className='text-lg'>{track.id}</p>
-                            <div className='flex flex-row items-center gap-6 w-full'>
-                                <a href="">
-                                    <PlayIcon className='w-6 h-6' />
-                                </a>
-                                <div className='flex flex-col w-full'>
-                                    <p className='text-lg sm:text-xl font-semibold text-nowrap'>{track.title}</p>
-                                    <p className='font-semibold'>{track.artist}</p>
+                        <div className='flex flex-row items-center py-4 pl-1'>
+                            <div className='flex flex-row items-center w-full gap-4'>
+                                <p className='text-lg w-6'>{track.id}</p>
+                                <div className='flex flex-row items-center gap-6 w-full'>
+                                    <a href="">
+                                        <PlayIcon className='w-6 h-6' />
+                                    </a>
+                                    <div className='flex flex-col w-full -space-y-1'>
+                                        <p className='text-lg sm:text-xl font-semibold text-nowrap'>{track.title}</p>
+                                        <p className='font-semibold'>{track.artist}</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className='flex flex-row items-center gap-1 md:gap-8 xl:gap-12'>
