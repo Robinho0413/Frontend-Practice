@@ -1,7 +1,7 @@
 import * as React from "react";
 const MonstercatPlayerIcon = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
     <svg
-        className="position-relative"
+        className="relative"
         style={{
             top: 3,
         }}
